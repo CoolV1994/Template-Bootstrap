@@ -1,0 +1,27 @@
+---
+pageTitle: {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
+---
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+
+<meta name="author" content="{% if page.authors %}{{ page.authors }}{% else %}{{ site.authors }}{% endif %}" />
+<meta name="generator" content="{{ site.generator }}" />
+<meta name="docsearch:language" content="{{ site.docs_language }}" />
+<meta name="docsearch:version" content="{{ site.docs_version }}" />
+
+<link rel="canonical" href="{{ site.baseURL }}{{ page.url }}" />
+
+<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+{% if site.robots %}<meta name="robots" content="{{ site.robots }}" />{% endif %}
+
+<script is:inline src="{{ site.baseURL }}assets/js/color-modes.js"></script>
+
+{% import head/Stylesheet.html direction=layout.direction layout=page.layout %}
+
+{% import head/Favicons.html %}
+{% import head/Social.html description=page.description layout=page.layout thumbnail=page.thumbnail title=page.title %}
+{% import head/Analytics.html %}
