@@ -12,13 +12,13 @@ pageTitle: {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif
 <meta name="docsearch:language" content="{{ site.docs_language }}" />
 <meta name="docsearch:version" content="{{ site.docs_version }}" />
 
-<link rel="canonical" href="{{ site.baseURL }}{{ page.url }}" />
+<link rel="canonical" href="{{ site.baseurl }}{{ page.url }}" />
 
 <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
 {% if site.robots %}<meta name="robots" content="{{ site.robots }}" />{% endif %}
 
-<script is:inline src="{{ site.baseURL }}assets/js/color-modes.js"></script>
+<script is:inline src="{{ site.baseurl }}/assets/js/color-modes.js"></script>
 
 {% import head/Stylesheet.html direction=layout.direction layout=page.layout %}
 
