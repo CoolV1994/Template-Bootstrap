@@ -5,14 +5,14 @@
 
 <meta name="author" content="{% if page.authors %}{{ page.authors }}{% else %}{{ site.authors }}{% endif %}" />
 <meta name="generator" content="{{ site.generator }}" />
-<meta name="docsearch:language" content="{{ site.docs_language }}" />
-<meta name="docsearch:version" content="{{ site.docs_version }}" />
+<meta name="docsearch:language" content="{% if page.language %}{{ page.language }}{% else %}{{ site.language }}{% endif %}" />
+<meta name="docsearch:version" content="{% if page.version %}{{ page.version }}{% else %}{{ site.version }}{% endif %}" />
 
 <link rel="canonical" href="{{ site.baseurl }}{{ page.url }}" />
 
 <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-{% if site.robots %}<meta name="robots" content="{{ site.robots }}" />{% endif %}
+{% if page.robots %}<meta name="robots" content="{{ page.robots }}" />{% endif %}
 
 <script is:inline src="{{ site.baseurl }}/assets/js/color-modes.js"></script>
 
