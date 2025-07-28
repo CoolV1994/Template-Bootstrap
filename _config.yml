@@ -1,29 +1,40 @@
-# Site settings
+# Site Settings
+baseurl: "/Template-Bootstrap"
+url: "https://coolv1994.github.io"
+
+
+# Site Info
 title: Bootstrap Template
 author: CoolV1994
 description: >
   Bootstrap Template for GitHub Pages
-baseurl: "/Template-Bootstrap"
-url: "https://coolv1994.github.io"
+
+
+# Custom Settings
 version: 1.0.0
 language: en
 
 
-# Build Settings
+# Markdown Processor
 markdown: kramdown
 
 
-# Post Pagination
+# Sass/Scss Settings
+sass:
+    sass_dir: _sass
+
+
+# Pagination Settings
 paginate: 10
 paginate_path: "/page/:num/"
 
 
-# Include Paths when Rendering
+# Include Directories
 include:
   - _pages
 
 
-# Custom Posts Collections
+# Collection Settings
 collections:
   blog:
     output: true
@@ -36,7 +47,7 @@ collections:
     url: /examples/
 
 
-# Default Values per Path
+# Default Values
 defaults:
   - scope:
       type: posts
