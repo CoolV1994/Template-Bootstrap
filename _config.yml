@@ -1,18 +1,19 @@
 # Site Settings
-baseurl: "/Template-Bootstrap"
-url: "https://coolv1994.github.io"
+#baseurl: "/Template-Bootstrap"
+#url: "https://coolv1994.github.io"
 
 
 # Site Info
-title: Bootstrap Template
-author: CoolV1994
-description: >
-  Bootstrap Template for GitHub Pages
+#title: Bootstrap Template
+#author: CoolV1994
+#description: >
+#  Bootstrap Template for GitHub Pages
 
 
 # Custom Settings
-version: 1.0.0
+encoding: utf-8
 language: en
+version: 1.0.0
 
 
 # Markdown Processor
@@ -29,9 +30,13 @@ paginate: 10
 paginate_path: "/page/:num/"
 
 
-# Include Directories
+# Include Files / Dirs
 include:
   - _pages
+
+
+# Excluded Files / Dirs
+exclude: []
 
 
 # Collection Settings
@@ -65,3 +70,20 @@ defaults:
       path: images
     values:
       album: images
+
+
+# Plugin Settings
+plugins: []
+
+
+# Plugins (GH Pages)
+#  - jekyll-coffeescript
+#  - jekyll-default-layout
+#  - jekyll-gist
+#  - jekyll-github-metadata
+#  - jekyll-optional-front-matter
+#  - jekyll-paginate
+#  - jekyll-readme-index
+#  - jekyll-titles-from-headings
+#  - jekyll-relative-links
+
