@@ -5,17 +5,23 @@ description: >
   Bootstrap Template for GitHub Pages
 baseurl: "/Template-Bootstrap"
 url: "https://coolv1994.github.io"
+version: 1.0.0
+language: en
+
 
 # Build Settings
 markdown: kramdown
+
 
 # Post Pagination
 paginate: 10
 paginate_path: "/page/:num/"
 
+
 # Include Paths when Rendering
 include:
   - _pages
+
 
 # Custom Posts Collections
 collections:
@@ -25,6 +31,10 @@ collections:
   docs:
     output: true
     url: /docs/
+  examples:
+    output: true
+    url: /examples/
+
 
 # Default Values per Path
 defaults:
