@@ -39,10 +39,18 @@ collections:
 # Default Values per Path
 defaults:
   - scope:
-      path: "images"
+      type: posts
+    values:
+      layout: PostLayout
+  - scope:
+      type: pages
+    values:
+      layout: PageLayout
+  - scope:
+      path: files
+    values:
+      album: files
+  - scope:
+      path: images
     values:
       album: images
-  - scope:
-      path: "images/sample"
-    values:
-      album: sample
