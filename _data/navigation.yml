@@ -1,7 +1,10 @@
 navbar:
   Home: /
   About: /about
-  Blog: /blog/
+  Blog:
+    Posts: /blog/
+    Categories: /blog/categories
+    Tags: /blog/tags
   Albums: /albums/
   Docs: /docs/
   Examples: /examples/
