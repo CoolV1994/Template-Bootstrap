@@ -1,0 +1,21 @@
+navbar:
+  Home: /
+  About: /about
+  Blog: /blog/
+  Albums: /albums/
+  Docs: /docs/
+  Examples: /examples/
+  Contact: /contact
+
+
+blog:
+  Posts: /blog/
+  Categories: /blog/categories
+  Tags: /blog/tags
+  Authors: /blog/authors
+
+
+examples:
+  Page 1: /examples/page-1
+  Page 2: /examples/page-2
+  
